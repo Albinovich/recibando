@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibando</title>
+    <link rel="stylesheet" href="./assets/css/index.less">
+</head>
+<body class="recibando">
+    <header class="recibando__header">
+        <h1>Recibando</h1>
+    </header>
+    <main class="recibando__main">
+        <div class="recibando__main__editor">
+            <form id="recibando-form" class="recibando__form">
+                <fieldset>
+                    <legend>Seus dados:</legend>
+                    <div class="input-group">
+                        <label for="professional-name" class="input-group__label">Seu Nome</label>
+                        <input id="professional-name" name="professionalName" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="prof-crp" class="input-group__label">Seu título</label>
+                        <input id="prof-crp" name="professionalTitle" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="prof-crp" class="input-group__label">Seu CRP</label>
+                        <input id="prof-crp" name="professionalCRP" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="prof-cpf" class="input-group__label">Seu CPF</label>
+                        <input id="prof-cpf" name="professionalCPF" type="text" class="input-group__input">
+                    </div>
+                    <input type="button" value="Limpar seus dados">
+                </fieldset>
+                <fieldset>
+                    <legend>Dados do Atendimento:</legend>
+                    <div class="input-group">
+                        <label for="patient-name" class="input-group__label">Nome do paciente</label>
+                        <input id="patient-name" name="patientName" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-cpf" class="input-group__label">CPF do paciente</label>
+                        <input id="patient-cpf" name="patientCPF" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="patient-rg" class="input-group__label">RG do paciente</label>
+                        <input id="patient-rg" name="patientRG" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="value-paid" class="input-group__label">Valor pago (por consulta)</label>
+                        <input id="value-paid" name="valuePaid" type="text" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="treatment-date" class="input-group__label">Data do atendimento</label>
+                        <input id="treatment-date" name="treatmentDate" type="date" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="treatment-city" class="input-group__label">Cidade do atendimento</label>
+                        <input id="treatment-city" name="treatmentCity" type="date" class="input-group__input">
+                    </div>
+                    <div class="input-group">
+                        <label for="receipt-date" class="input-group__label">Data do recibo</label>
+                        <input id="receipt-date" name="receiptDate" type="date" class="input-group__input">
+                    </div>
+                    <input type="button" value="Limpar dados do atendimento">
+                </fieldset>               
+            </form>
+        </div>
+        <div class="recibando__main__preview">
+            <div class="preview__document">
+                <h3>[CIDADE DO ATENDIMENTO], [DATA DO RECIBO]</h3>
+                <p>Eu, 
+                    <span id="professionalName" data-default="[SEU NOME]">[SEU NOME]</span>,
+                    <span id="professionalName" data-default="[SEU TÍTULO]">[SEU TÍTULO]</span>, 
+                    CRP nº <span id="professionalCRP" data-default="[SEU CRP]">[SEU CRP]</span>, 
+                    CPF nº <span id="professionalCPF" data-default="[SEU CPF]">[SEU CPF]</span>[SEU CPF], recebi de 
+                    <span id="professionalCRP" data-default="[SEU CRP]">[SEU CRP]</span>[NOME DO PACIENTE], 
+                    CPF nº <span id="patientName" data-default="[NOME DO PACIENTE]">[NOME DO PACIENTE]</span>, 
+                    RG nº [RG DO PACIENTE], a importância de 
+                    R$ [VALOR DA CONSULTA], referente ao pagamento de atendimento psicológico no dia 
+                    [DATA DO ATENDIMENTO], das 
+                    [HORÁRIO DO ATENDIMENTO].
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="recibando__footer"></footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

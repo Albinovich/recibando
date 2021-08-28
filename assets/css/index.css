@@ -1,0 +1,71 @@
+@font-face {
+  font-family: roboto;
+  src: url('../fonts/roboto/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+.recibando {
+  margin: 0;
+  padding: 0;
+}
+.recibando__header {
+  background-color: goldenrod;
+}
+.recibando__main {
+  display: flex;
+}
+.recibando__main__editor {
+  flex: 1;
+}
+.recibando__main__editor .recibando__form {
+  width: 100%;
+}
+.recibando__main__editor .recibando__form .input-group {
+  position: relative;
+  width: 100%;
+  margin: 12px 0;
+}
+.recibando__main__editor .recibando__form .input-group__label {
+  position: absolute;
+  font-family: roboto;
+  font-size: 16px;
+  top: 12px;
+  left: 12px;
+  padding: 0 20px 0 0;
+  transition: all 0.2s;
+  background-color: white;
+}
+.recibando__main__editor .recibando__form .input-group__label.touched {
+  top: -5px;
+  font-size: 12px;
+}
+.recibando__main__editor .recibando__form .input-group__input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+}
+.recibando__main__preview {
+  flex: 1;
+}
+.preview__document {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
